@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background: #292929;
+    height: 100vh;
+    width: 100vw;
+}
+nav{
+    background: rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    position: sticky;
+    top: 0;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo img{
+    width: 50px;
+    border-radius: 50%;
+}
+#navbar{
+    display: flex;
+    gap: 100px;
+}
+#navitems{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+#navitems li{
+    position: relative;
+    padding: 10px;
+    list-style: none;
+}
+#navitems a{
+    text-decoration: none;
+    transition: all ease 0.3s;
+    color: #fff;
+    font-size: 1.1rem;
+}
+#navitems a:hover{
+    color: red;
+}
+.btns{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.btns button{
+    padding: 8px 15px ;
+    position: relative;
+    outline: none;
+    background: transparent;
+    border-radius: 5px ;
+    border: 2px solid #fff;
+    color: #fff;
+}
+.btns button::before{
+    content: "";
+    position: absolute;
+    width: 0%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    height: 100%;
+    bottom: 50%;
+    z-index: -5000;
+}
+.btns button:hover::before{
+    width: 100%;
+    background: red;
+}
+#icons{
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+}
+#icons ion-icon{
+    font-size: 1.4rem;
+    color: #fff;
+}
+.menu-btn{
+    display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+    body{
+        height: 100%;
+        width: 100%;
+        background: #292929;
+    }
+    nav{
+        padding: 20px;
+
+    }
+    #navbar{
+        position: absolute;
+        top: -750%;
+        padding-block: 20px;
+        display: flex;align-items: center;
+        background: rgba(255, 255, 255, 0.2);
+        flex-direction: column;
+        gap: 30% ;
+        left: 0;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.7s ease;
+    }
+    #navitems{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .btns{
+        flex-direction: column-reverse;
+        display: flex;
+    }
+    .menu-btn{
+        display: flex;
+        height: 40px;
+        width: 40px;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        color: red;
+        font-size: 1.1rem;
+
+        }
+}
