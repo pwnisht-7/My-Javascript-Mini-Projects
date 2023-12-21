@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text-Slider</title>
+    <style>
+      *{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: 'Courier New', Courier, monospace;
+      }
+      body{
+          background: url(./reflection-lights-mountain-lake-captured-parco-ciani-lugano-switzerland.jpg);
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          height: 100vh;
+          width: 100vw;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      }
+      .container{
+          height: 200px;
+          width: 560px;
+          background: rgba(0, 0, 0, 0.4);
+          backdrop-filter: blur(5px);
+          border-radius: 5px;
+          padding: 40px;
+          color: aliceblue;
+          display: flex;
+          align-items: center;
+          font-size: 1.4rem;
+      }
+      .text{
+        color: rgb(217, 255, 0);
+        transition: all 0.3s ease;
+        transition: color 0.1s;
+      }
+      body
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        <span> I Love </span>
+        <span class="text"> Coding</span>
+      </h1>
+    </div>
+    <script>
+      const text = document.querySelector(".text");
+      const textLoader = () => {
+        setTimeout(() => {
+          text.textContent = "Coding";
+          text.style.color = "rgb(0, 195, 255)"
+        }, 0);
+        setTimeout(() => {
+          text.textContent = "Cricket";
+          text.style.color = "rgb(0, 255, 42)"
+        }, 3000);
+        setTimeout(() => {
+          text.textContent = "Technology";
+          text.style.color = "rgb(255, 0, 76)"
+        }, 6000);
+        setTimeout(() => {
+          text.textContent = "Reading";
+          text.style.color = "rgb(217, 255, 0)"
+        }, 9000);
+      };
+
+      textLoader();
+      setInterval(textLoader, 12000);
+    </script>
+  </body>
+</html>

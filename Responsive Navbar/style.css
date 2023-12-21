@@ -101,13 +101,13 @@ nav{
     }
     nav{
         padding: 20px;
-
     }
     #navbar{
         position: absolute;
         top: -750%;
         padding-block: 20px;
-        display: flex;align-items: center;
+        display: flex;
+        align-items: center;
         background: rgba(255, 255, 255, 0.2);
         flex-direction: column;
         gap: 30% ;

@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    color: #fff;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background: url(./lake-with-shore-sunset.jpg);
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.container{
+    background: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    -webkit-backdrop-filter: blur(2px);
+            backdrop-filter: blur(2px);
+    border-radius: 4px;
+}
+.container h1{
+    text-align: center;
+    margin-bottom: 25px;
+}
+form{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 30px;
+}
+.form-container{
+    position: relative;
+    width: 290px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.form-container label{
+    top: 50%;
+    left: 0;
+    position: absolute;
+    font-size: 0.9rem;
+    pointer-events: none;
+    -webkit-transform:translateY(-50%);
+        -ms-transform:translateY(-50%);
+            transform:translateY(-50%);
+    font-size: 1rem;
+    -webkit-transition: 0.5s ease all;
+    -o-transition: 0.5s ease all;
+    transition: 0.5s ease all;
+}
+
+.input{
+    width: 100%;
+    padding: 8px;
+    outline: none;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #fff;
+}
+.form-container input:valid ~ label,
+.form-container input:hover ~ label,
+.form-container input:focus ~ label
+ {
+    top:-5px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    left: 0;
+    color: rgb(0, 170, 255);
+}
+.icon{
+    top: 40%;
+    right: 2px;
+    position: absolute;
+    font-size: 1.2rem;
+    pointer-events: none;
+    -webkit-transform:translateY(-50%);
+        -ms-transform:translateY(-50%);
+            transform:translateY(-50%);
+    font-size: 1rem;
+}
+.forget{
+    color: rgb(0, 170, 255);
+    text-decoration: none;
+    font-weight: 700;
+}
+button{
+    width: 100%;
+    padding: 8px;
+    outline: none;
+    color: #fff;
+    font-weight: 700;
+    border: 2px solid #fff;
+    border-radius:80px;
+    font-size: 1rem;
+    background: transparent;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+button:hover{
+    background: #fff;
+    color: rgb(0, 170, 255);
+}
