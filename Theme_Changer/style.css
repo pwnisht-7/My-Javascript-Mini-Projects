@@ -1,0 +1,203 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Single Day", cursive;
+}
+
+:root {
+    ---text-color: #191919;
+    ---primary-color: #fff;
+    ---secondaty-color: #ac54ff;
+    ---third-color: #ffdad1;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background: var(---primary-color);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.container {
+    height: 700px;
+    width: 900px;
+    position: relative;
+    background: var(---third-color);
+    border-radius: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.upper {
+    position: absolute;
+    height: 600px;
+    width: 1100px;
+    background: var(---secondaty-color);
+    top: -30%;
+    left: -20%;
+    -webkit-transform: rotate(-25deg);
+    -ms-transform: rotate(-25deg);
+    transform: rotate(-25deg);
+    z-index: 400;
+}
+
+.content {
+    height: 550px;
+    width: 700px;
+    background: var(---primary-color);
+    border-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    z-index: 5000;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.color-box {
+    background: var(---secondaty-color);
+    height: 300px;
+    width: 400px;
+    border-radius: 20px;
+    padding: 10px;
+    position: relative;
+}
+
+.img {
+    height: 200px;
+    position: absolute;
+    left: 115px;
+    background: var(---secondaty-color);
+    border: 10px solid var(---secondaty-color);
+    bottom: -25px;
+    border-radius: 20px;
+    background: var(---primary-color);
+}
+
+.text-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+    height: 200px;
+    width: 100%;
+}
+
+.text-box h1 {
+    color: var(---text-color);
+    font-size: 2.4rem;
+}
+
+.text-box h4 {
+    color: grey;
+    letter-spacing: 2px;
+}
+
+.line {
+    background: var(---secondaty-color);
+    height: 2px;
+    width: 20%;
+}
+
+.paragraph-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.paragraph-box p {
+    text-align: justify;
+    color: var(---text-color);
+    font-size: 1rem;
+}
+
+.stars {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 10px;
+    background: var(---secondaty-color);
+    border-radius: 10px;
+}
+
+ion-icon {
+    color: var(---text-color);
+    font-size: 1.5rem;
+}
+
+.switcher {
+    color: var(---primary-color);
+    position: absolute;
+    top: 20px;
+    background: var(---text-color);
+    right: 20px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    padding: 10px;
+    -webkit-transition: all 0.5s ease all;
+    -o-transition: all 0.5s ease all;
+    transition: all 0.5s ease all;
+}
